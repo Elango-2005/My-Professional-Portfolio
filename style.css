@@ -74,7 +74,7 @@ nav ul a:hover {
 
 /* Home Page Styles */
 .home-page {
-  background-image: url("Images/Screenshot\ 2026-01-11\ 183316.png");
+  background-image: url("Screenshot\ 2026-01-11\ 183316.png");
   background-size: cover;
   width: 100%;
   height: 100vh;
@@ -178,7 +178,7 @@ nav ul a:hover {
 
 /* About Page Styles */
 .about-page {
-  background-image: url("Images/Screenshot\ 2026-01-11\ 201653.png");
+  background-image: url("Screenshot\ 2026-01-11\ 201653.png");
   background-size: cover;
   width: 100%;
   height: 100vh;
@@ -360,7 +360,7 @@ nav ul a:hover {
 
 /* Skills Page Styles */
 .skills-page {
-  background-image: url("Images/Screenshot\ 2026-01-11\ 201653.png");
+  background-image: url("Screenshot\ 2026-01-11\ 201653.png");
   background-size: cover;
   width: 100%;
   height: 100vh;
@@ -475,7 +475,7 @@ nav ul a:hover {
 
 /* Project page styles */
 .project-page {
-  background-image: url("Images/Screenshot\ 2026-01-11\ 201653.png");
+  background-image: url("Screenshot\ 2026-01-11\ 201653.png");
   background-size: cover;
   width: 100%;
   height: 100vh;
@@ -624,7 +624,7 @@ nav ul a:hover {
 
 /* Contact Page Styles */
 .contact-page {
-  background-image: url("Images/Screenshot\ 2026-01-11\ 201653.png");
+  background-image: url("Screenshot\ 2026-01-11\ 201653.png");
   background-size: cover;
   width: 100%;
   height: 100vh;
@@ -998,4 +998,5 @@ nav ul a:hover {
     opacity: 1;
     transform: translateX(0px) scale(1);
   }
+
 }
