@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>My Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+    <style>
+        .swiper-pagination {
+            margin-bottom: -15px !important;
+        }
+
+        .swiper-pagination-bullet {
+            width: 10px;
+            height: 10px;
+            background: #555;
+            opacity: 1;
+            border-radius: 50%;
+            transition: all 0.3s ease;
+        }
+
+        .swiper-pagination-bullet-active {
+            background: #9719fd;
+            width: 22px;
+            border-radius: 10px;
+        }
+
+        .swiper-button-prev {
+            color: #ffffff;
+            width: 20px;
+        }
+
+        .swiper-button-next {
+            color: #ffffff;
+            width: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark nav-bg fixed-top nav-drop-shadow">
+        <a class="navbar-brand" href="#HomePageSection">
+            <h1 class="logo"><span class="span-ele">P</span>ortfolio</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active navbar-item-align">
+                    <a href="#HomePageSection">HOME
+                    </a>
+                </li>
+                <li class="nav-item active navbar-item-align">
+                    <a href="#AboutPageSection">ABOUT</a>
+                </li>
+                <li class="nav-item active navbar-item-align">
+                    <a href="#SkillsPageSection">SKILLS</a>
+                </li>
+                <li class="nav-item active navbar-item-align">
+                    <a href="#ProjectsPageSection">PROJECTS</a>
+                </li>
+                <li class="nav-item active navbar-item-align">
+                    <a href="#ContactPageSection">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Page -->
+    <div class="home-page" id="HomePageSection">
+        <div class="home-con afterDelayHomeInfo autoBlur w-5">
+            <h5 class="name-ele">
+                Hi 👋, I'm <span class="span-ele">Elango S</span>
+            </h5>
+            <h1 class="role-ele">Full Stack Developer</h1>
+            <p class="description">
+                Full Stack Developer crafting modern, responsive web apps with
+                clean UI
+                and robust backend architecture.
+            </p>
+            <div>
+                <a href="#ProjectsPageSection" style="text-decoration: none;">
+                    <button class="view-btn mr-5">View My Work</button>
+                </a>
+                <a href="Assests/Elango Resume (1).pdf" style="text-decoration: none;" download="Elango Resume.pdf">
+                    <button class="download-btn">Download CV</button>
+                </a>
+            </div>
+        </div>
+
+        <div class="robo-con afterDelayRobo autoBlur">
+            <script type="module" src="https://unpkg.com/@splinetool/viewer@1.12.32/build/spline-viewer.js"></script>
+            <spline-viewer class="my-spline"
+                url="https://prod.spline.design/QuqOIzovyjNFmu73/scene.splinecode"></spline-viewer>
+        </div>
+    </div>
+
+    <!--About Me Page-->
+    <div class="about-page" id="AboutPageSection">
+        <h1 class="about-title autoDisplay">About <span>Me</span></h1>
+        <div class="about-section">
+            <div class="profile-con">
+                <div class="blue-dot"></div>
+                <div class="circle-wrapper">
+                    <div class="upper-circle"></div>
+                    <div class="inner-circle">
+                        <img src="Images/Picsart_24-03-10_23-12-42-853.jpg" alt="" class="profile-img">
+                    </div>
+                </div>
+                <div class="pink-dot"></div>
+            </div>
+            <div class="about-con" id="AboutPageSection">
+                <div class="fadeInRight">
+                    <p class="about-content1 ">I am a Full-Stack Developer with experience in building clean,
+                        scalable, and user-focused digital
+                        solutions, supported by hands-on expertise across both frontend and backend technologies. I
+                        specialize in converting ideas into
+                        high-performance, secure, and
+                        visually consistent applications. I emphasize writing maintainable code, improving system
+                        performance, and
+                        delivering dependable solutions that
+                        align with business objectives and real-world user requirements.
+                    </p>
+                </div>
+                <div class="fadeInRight">
+                    <p class="about-content2 ">Beyond coding, I continuously explore emerging tools, frameworks, and
+                        industry
+                        best practices
+                        to remain current in a rapidly
+                        evolving technology landscape. I am motivated by solving complex problems, collaborating
+                        effectively within teams, and
+                        developing solutions that deliver measurable value. My objective is to grow as a software
+                        developer
+                        while
+                        contributing to impactful projects that challenge my skills and strengthen my technical
+                        expertise.
+                    </p>
+                </div>
+
+                <div class="about-cards">
+                    <p class="a-card cardsFadeInRight"><span class="a-span1">3+ </span>Projects Completed</p>
+                    <p class="a-card cardsFadeInRight"><span class="a-span2">1 </span>Internship Completed</p>
+                    <p class="a-card cardsFadeInRight"><span class="a-span3">200+ </span>Problems Solved</p>
+                    <p class="a-card cardsFadeInRight"><span class="a-span4">20+ </span>Certifications</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--Skills Page-->
+    <div class="skills-page" id="SkillsPageSection">
+        <h1 class="skills-title autoDisplay">My <Span>Skills</Span></h1>
+        <div class="skills-row">
+            <div class="skills-card">
+                <div class="skills-icon-bg">
+                    <i class="fa-brands fa-html5" style="color: #FFFFFF; font-size: 30px;"></i>
+                </div>
+                <h5 class="skills-name">HTML</h5>
+                <div class="skill-bar">
+                    <div class="skill-fill" style="width:95%"></div>
+                </div>
+                <p class="progress-pct">95%</p>
+            </div>
+            <div class="skills-card">
+                <div class="skills-icon-bg">
+                    <i class="fa-brands fa-css3-alt" style="color: #FFFFFF; font-size: 30px;"></i>
+                </div>
+                <h5 class="skills-name">CSS</h5>
+                <div class="skill-bar">
+                    <div class="skill-fill" style="width:95%"></div>
+                </div>
+                <p class="progress-pct">95%</p>
+            </div>
+            <div class="skills-card">
+                <div class="skills-icon-bg">
+                    <i class="fa-brands fa-bootstrap" style="color: #FFFFFF; font-size: 27px;"></i>
+                </div>
+                <h5 class="skills-name">Bootstrap</h5>
+                <div class="skill-bar">
+                    <div class="skill-fill" style="width:95%"></div>
+                </div>
+                <p class="progress-pct">95%</p>
+            </div>
+            <div class="skills-card">
+                <div class="skills-icon-bg">
+                    <i class="fa-brands fa-node-js" style="color: #FFFFFF; font-size: 30px;"></i>
+                </div>
+                <h5 class="skills-name">JavaScript</h5>
+                <div class="skill-bar">
+                    <div class="skill-fill" style="width:90%"></div>
+                </div>
+                <p class="progress-pct">90%</p>
+            </div>
+            <div class="skills-card">
+                <div class="skills-icon-bg">
+                    <i class="fa-brands fa-figma" style="color: #FFFFFF; font-size: 27px;"></i>
+                </div>
+                <h5 class="skills-name">UI/UX</h5>
+                <div class="skill-bar">
+                    <div class="skill-fill" style="width:90%"></div>
+                </div>
+                <p class="progress-pct">90%</p>
+            </div>
+        </div>
+        <div class="skills-row">
+            <div class="skills-card">
+                <div class="skills-icon-bg">
+                    <i class="fa-brands fa-node" style="color: #FFFFFF; font-size: 30px;"></i>
+                </div>
+                <h5 class="skills-name">Node.js</h5>
+                <div class="skill-bar">
+                    <div class="skill-fill" style="width:80%"></div>
+                </div>
+                <p class="progress-pct">80%</p>
+            </div>
+            <div class="skills-card">
+                <div class="skills-icon-bg">
+                    <i class="fa-brands fa-react" style="color: #FFFFFF; font-size: 30px;"></i>
+                </div>
+                <h5 class="skills-name">React JS</h5>
+                <div class="skill-bar">
+                    <div class="skill-fill" style="width:80%"></div>
+                </div>
+                <p class="progress-pct">80%</p>
+            </div>
+            <div class="skills-card">
+                <div class="skills-icon-bg">
+                    <i class="fa-brands fa-python" style="color: #FFFFFF; font-size: 30px;"></i>
+                </div>
+                <h5 class="skills-name">Python</h5>
+                <div class="skill-bar">
+                    <div class="skill-fill" style="width:90%"></div>
+                </div>
+                <p class="progress-pct">90%</p>
+            </div>
+            <div class="skills-card">
+                <div class="skills-icon-bg">
+                    <i class="fa-brands fa-java" style="color: #FFFFFF; font-size: 33px;"></i>
+                </div>
+                <h5 class="skills-name">Java</h5>
+                <div class="skill-bar">
+                    <div class="skill-fill" style="width:85%"></div>
+                </div>
+                <p class="progress-pct">85%</p>
+            </div>
+            <div class="skills-card">
+                <div class="skills-icon-bg">
+                    <i class="fa-sharp fa-solid fa-database" style="color: #FFFFFF; font-size: 28px;"></i>
+                </div>
+                <h5 class="skills-name">SQLite</h5>
+                <div class="skill-bar">
+                    <div class="skill-fill" style="width:80%"></div>
+                </div>
+                <p class="progress-pct">80%</p>
+            </div>
+        </div>
+        <div class="skills-row">
+            <div class="skills-card">
+                <div class="skills-icon-bg">
+                    <i class="fa-brands fa-envira" style="color: #FFFFFF; font-size: 30px;"></i>
+                </div>
+                <h5 class="skills-name">MongoDB</h5>
+                <div class="skill-bar">
+                    <div class="skill-fill" style="width:80%"></div>
+                </div>
+                <p class="progress-pct">80%</p>
+            </div>
+            <div class="skills-card">
+                <div class="skills-icon-bg">
+                    <i class="fa-brands fa-git-alt" style="color: #FFFFFF; font-size: 30px;"></i>
+                </div>
+                <h5 class="skills-name">Git</h5>
+                <div class="skill-bar">
+                    <div class="skill-fill" style="width:80%"></div>
+                </div>
+                <p class="progress-pct">80%</p>
+            </div>
+            <!--Add Skill Card-->
+            <div class="skills-card">
+                <div class="skills-add-bg">
+                    <i class="fa-solid fa-plus" style="color: rgb(255, 255, 255, 0.6); font-size: 30px;"></i>
+                </div>
+                <h5 class="skills-name">Add</h5>
+            </div>
+        </div>
+    </div>
+
+    <!--Projects Page-->
+    <div class="project-page" id="ProjectsPageSection">
+        <h1 class="project-page-title autoDisplay">Featured <span>Projects</span></h1>
+        <p class="project-page-desc">A collection of real-world projects demonstrating my full-stack skills, clean code
+            practices, and problem-solving approach.</p>
+        <div class="swiper mySwiper"
+            style="padding-top:20px; padding-bottom:20px; padding-left:20px; padding-right:20px;">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="Images/ecommerce-project-banner-landing-page-template-website_541075-1532.avif" alt=""
+                        class="project-img">
+                    <div class="project-details">
+                        <h1 class="project-title">E-Commerce Website Project</h1>
+                        <p class="project-desc">An e-commerce website designed to provide a seamless online shopping
+                            experience with product browsing, cart management, and secure checkout functionality.</p>
+                        <div class="project-techs">
+                            <p class="project-tech">HTML,CSS,JS</p>
+                            <p class="project-tech">ReactJS</p>
+                            <p class="project-tech">Nodejs</p>
+                            <p class="project-tech">Python</p>
+                            <p class="project-tech">REST API</p>
+                        </div>
+                    </div>
+                    <div class="view-btn-con">
+                        <button class="project-view-btn">View Details <i class="fa-solid fa-arrow-right"
+                                style="color: #9719FD; font-size:20px; margin-left:10px; margin-top:0px;"></i></button>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="Images/21550-01-portfolio-presentation-template-16x9-1.webp" alt="" class="project-img">
+                    <div class="project-details">
+                        <h1 class="project-title">Professional Portfolio</h1>
+                        <p class="project-desc">This project showcases the design and implementation of a practical
+                            solution built with modern technologies to solve real-world problems in an efficient and
+                            reliable way.</p>
+                        <div class="project-techs">
+                            <div class="project-tech">HTML & CSS</div>
+                            <div class="project-tech">JavaScript</div>
+                            <div class="project-tech">ReactJS</div>
+                            <div class="project-tech">Node.js</div>
+                            <div class="project-tech">Python</div>
+                        </div>
+                    </div>
+                    <div class="view-btn-con">
+                        <button class="project-view-btn">View Details <i class="fa-solid fa-arrow-right"
+                                style="color: #9719FD; font-size:20px; margin-left:10px; margin-top:0px;"></i></button>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="Images/Model-Content-Protocol-MCP.jpg" alt="" class="project-img">
+                    <div class="project-details">
+                        <h1 class="project-title">MCP - Learning Path Generator</h1>
+                        <p class="project-desc">Built an AI-driven system that creates personalized learning paths using
+                            prompt-driven workflows, seamlessly integrated with MCP to enhance adaptability and learning
+                            efficiency.</p>
+                        <div class="project-techs">
+                            <div class="project-tech">Cursor IDE</div>
+                            <div class="project-tech">Pipe Dream</div>
+                            <div class="project-tech">MCP Server</div>
+                            <div class="project-tech">Google APIs</div>
+                        </div>
+                    </div>
+                    <div class="view-btn-con">
+                        <button class="project-view-btn">View Details <i class="fa-solid fa-arrow-right"
+                                style="color: #9719FD; font-size:20px; margin-left:10px; margin-top:0px;"></i></button>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="Images/ecommerce-project-banner-landing-page-template-website_541075-1532.avif" alt=""
+                        class="project-img">
+                    <div class="project-details">
+                        <h1 class="project-title">E-Commerce Website Project</h1>
+                        <p class="project-desc">An e-commerce website designed to provide a seamless online shopping
+                            experience with product browsing, cart management, and secure checkout functionality.</p>
+                        <div class="project-techs">
+                            <p class="project-tech">HTML,CSS,JS</p>
+                            <p class="project-tech">ReactJS</p>
+                            <p class="project-tech">Nodejs</p>
+                            <p class="project-tech">Python</p>
+                            <p class="project-tech">REST API</p>
+                        </div>
+
+                    </div>
+                    <div class="view-btn-con">
+                        <button class="project-view-btn">View Details <i class="fa-solid fa-arrow-right"
+                                style="color: #9719FD; font-size:20px; margin-left:10px; margin-top:0px;"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+
+    <!--Contact Page-->
+    <div class="contact-page" id="ContactPageSection">
+        <h1 class="contact-page-title autoDisplay">Get In <span>Touch</span></h1>
+        <p class="contact-page-desc autoDisplay">Feel free to reach out if you have an opportunity, a project idea, or
+            just want to
+            connect. I’m always open
+            to discussing full-stack development, AI workflows, and new collaborations. You can contact me through email
+            or any of my social platforms</p>
+
+        <div class="contact-page-cards">
+            <div class="form-section">
+                <form id="contactForm" action="https://formspree.io/f/mojlkoay" method="POST">
+                    <div>
+                        <label for="name" class="label-ele">Name</label>
+                        <input type="text" class="input-ele-style" id="name" name="name" placeholder="Your name">
+                    </div>
+                    <div>
+                        <label for="email" class="label-ele">Email</label>
+                        <input type="email" class="input-ele-style" id="email" name="email"
+                            placeholder="Your email eg:example@gmail.com">
+                    </div>
+                    <div>
+                        <label for="message" class="label-ele">Message</label>
+                        <textarea name="message" id="message" class="msg-ele-style" rows="6" cols="50"
+                            placeholder="Share your thoughts with me..."></textarea>
+                    </div>
+                    <button class="form-btn" type="submit">Send Message <i class="fa-solid fa-paper-plane"
+                            style="color: #FFFFFF; font-size: 18px; margin-left:10px;"></i></button>
+                    <p id="status" class="error-msg"></p>
+                </form>
+            </div>
+            <div>
+                <div class="connect-section">
+                    <h6 class="connect-sec-title">Let's Connect</h6>
+                    <p class="connect-sec-desc">I’m always excited to work on new projects and collaborate with amazing
+                        people. Whether you have a
+                        specific idea in mind or just want to explore new possibilities, I’d love to hear from you.</p>
+                    <a href="mailto:elangoselvaraj372@gmail.com" class="social-con-card" style="text-decoration: none;">
+                        <div class="icon-con">
+                            <i class="fa-solid fa-envelope" style="color: #FFFFFF; font-size:23px;"></i>
+                        </div>
+                        <div>
+                            <p class="social-media-name">Email</p>
+                            <p class="social-media-id">elangoselvaraj372@gmail.com</p>
+                        </div>
+                    </a>
+                    <a href="tel:+919094186683" class="social-con-card" style="text-decoration: none;">
+                        <div class="phone-icon-con">
+                            <i class="fa-solid fa-phone-volume" style="color: #000000; font-size:22px;"></i>
+                        </div>
+                        <div>
+                            <p class="social-media-name">Phone</p>
+                            <p class="social-media-id">+91 9094186683</p>
+                        </div>
+                    </a>
+                    <a class="social-con-card" style="text-decoration: none;"
+                        href="https://www.google.com/maps/place/Moongilthuraippattu,+Tamil+Nadu/@12.0524023,78.9326699,14z/data=!3m1!4b1!4m6!3m5!1s0x3bac970abccc648b:0x61cdafec00363810!8m2!3d12.0591142!4d78.974026!16s%2Fm%2F065zgdl?entry=ttu&g_ep=EgoyMDI2MDEyOC4wIKXMDSoASAFQAw%3D%3D">
+                        <div class="icon-con">
+                            <i class="fa-sharp fa-solid fa-street-view" style="color: #FFFFFF; font-size:23px;"></i>
+                        </div>
+                        <div>
+                            <p class="social-media-name">Address</p>
+                            <p class="social-media-id">1/90, M.T.Pattu, Kallakurichi, 605-702.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="follow-me-con">
+                    <p class="follow-me">Follow Me On</p>
+                    <div class="icons-container">
+                        <a href="https://github.com/Elango-2005" style="text-decoration:none;" target="_blank">
+                            <div class="icon-con">
+                                <i class="fa-brands fa-github" style="color: #FFFFFF; font-size:21.5px;"></i>
+                            </div>
+                        </a>
+                        <a href="https://www.linkedin.com/in/elango-selvaraj/" style="text-decoration:none;"
+                            target="_blank">
+                            <div class="icon-con-uni">
+                                <i class="fa-brands fa-linkedin-in" style="color: #000000; font-size:21px;"></i>
+                            </div>
+                        </a>
+                        <a href="https://www.instagram.com/_elango_ms_rolex_?igsh=Y29vbjI1Yjd0YXJh"
+                            style="text-decoration:none;" target="_blank">
+                            <div class="icon-con">
+                                <i class="fa-brands fa-instagram" style="color: #FFFFFF; font-size:21.5px;"></i>
+                            </div>
+                        </a>
+                        <a href="https://x.com/ElangoS2005" style="text-decoration:none;" target="_blank">
+                            <div class="icon-con-uni">
+                                <i class="fa-brands fa-x-twitter" style="color: #000000; font-size:19px;"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer-copy-right">
+            &copy; 2024 Elango S. All Rights Reserved.
+        </footer>
+        </div>
+
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+</body>
+
+</html>
