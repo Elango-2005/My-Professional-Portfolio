@@ -110,7 +110,7 @@ body {
   text-align: center;
 }
 .span-ele {
-  letter-space:2.5px;
+  letter-space:3px;
   color: #9719fd;
 }
 .navbar-item-align {
@@ -1159,5 +1159,6 @@ nav ul a.active {
     order: 1;
   }
 }
+
 
 
