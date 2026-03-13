@@ -102,6 +102,7 @@ body {
 }
 .logo {
   font-family: "Quantum";
+  letter-space:2px;
   color: #ffffff;
   font-weight: 700;
   font-size: 35px;
@@ -109,6 +110,7 @@ body {
   text-align: center;
 }
 .span-ele {
+  letter-space:2.5px;
   color: #9719fd;
 }
 .navbar-item-align {
@@ -1157,4 +1159,5 @@ nav ul a.active {
     order: 1;
   }
 }
+
 
