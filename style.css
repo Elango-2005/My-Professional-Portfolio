@@ -92,21 +92,23 @@ body {
   margin-top: auto;
   margin-bottom: auto;
 }
+@font-face {
+  font-family: "Nero";
+  src: url("Fonts/Nero.otf");
+}
+@font-face {
+  font-family: "Quantum";
+  src: url("Fonts/Quantum.otf");
+}
 .logo {
-  font-family: "Hanalei Fill", cursive;
+  font-family: "Quantum";
   color: #ffffff;
   font-weight: 700;
-  font-size: 11px;
+  font-size: 35px;
   text-decoration: none;
   text-align: center;
 }
-.logo-img{
-  width: 50px;
-  margin-left: 5px;
-  margin-bottom: 5px;
-}
 .span-ele {
-  font-weight: 700;
   color: #9719fd;
 }
 .navbar-item-align {
@@ -1155,3 +1157,4 @@ nav ul a.active {
     order: 1;
   }
 }
+
