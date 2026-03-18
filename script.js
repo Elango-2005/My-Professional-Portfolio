@@ -47,6 +47,8 @@ form.addEventListener("submit", function (e) {
 const navLinks = document.querySelectorAll("nav ul li a");
 const logo = document.querySelector(".navbar-brand");
 const homeLink = document.querySelector('nav ul li a[href="#HomePageSection"]'); 
+const navbarToggler = document.querySelector(".navbar-toggler");
+const navbarCollapse = document.getElementById("navbarNav");
 
 // Function to set active link
 function setActive(link) {
@@ -58,6 +60,12 @@ function setActive(link) {
 navLinks.forEach(link => {
   link.addEventListener("click", function () {
     setActive(this);
+    // Automatically close the mobile navbar when a link is clicked
+    if (navbarCollapse && navbarCollapse.classList.contains("show")) {
+      if (navbarToggler) {
+        navbarToggler.click();
+      }
+    }
   });
 });
 
@@ -78,3 +86,19 @@ window.addEventListener("load", function () {
 
 });
 
+// Scroll Animation Observer for Mobile
+const animationObserver = new IntersectionObserver((entries, observer) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('mobile-animate');
+      // Optional: stop observing once animated to prevent repeating
+      // observer.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.1 });
+
+// Target animation classes
+const animatedElements = document.querySelectorAll('.autoDisplay, .fadeInRight, .cardsFadeInRight, .autoBlur');
+animatedElements.forEach(el => {
+  animationObserver.observe(el);
+});
