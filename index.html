@@ -19,12 +19,13 @@
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
     <script src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.8.11/dist/dotlottie-wc.js" type="module"></script>
     <style>
         .swiper-pagination {
-            margin-bottom: -15px !important;
+            margin-bottom: -15px;
         }
 
         .swiper-pagination-bullet {
@@ -65,8 +66,8 @@
 
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark nav-bg fixed-top nav-drop-shadow">
-        <a class="navbar-brand" href="#HomePageSection">
-            <h1 class="logo"><span class="span-ele">E</span>lango</h1>
+        <a class="navbar-brand d-flex align-items-center" href="#HomePageSection" style="gap: 12px; height: 100%;">
+            <h1 class="logo mb-0"><span>E</span>LANGO</h1>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -109,10 +110,11 @@
             </p>
             <div class="btn-con">
                 <a href="#ProjectsPageSection" style="text-decoration: none; margin:0px;">
-                    <button class="view-btn mr-5">View My Work <i class="fa-solid fa-arrow-right"
+                    <button class="view-btn">View My Work <i class="fa-solid fa-arrow-right"
                             style="color: #FFFFFF; font-size:20px; margin-left:10px; margin-top:3px; margin-bottom:0px;"></i></button>
                 </a>
-                <a href="Assests/Elango Resume (1).pdf" style="text-decoration: none; margin:0px;" download="Elango Resume.pdf">
+                <a href="Assests/Elango Resume (1).pdf" style="text-decoration: none; margin:0px;"
+                    download="Elango Resume.pdf">
                     <button class="download-btn">Download CV <i class="fa-solid fa-cloud-arrow-down"
                             style="color: #FFFFFF; font-size:20px; margin-left:10px; margin-top:0px;"></i></button>
                 </a>
@@ -131,7 +133,7 @@
     <div class="about-page" id="AboutPageSection">
         <h1 class="about-title autoDisplay">About <span>Me</span></h1>
         <div class="about-section">
-            <div class="profile-con">
+            <div class="profile-con autoBlur">
                 <div class="blue-dot"></div>
                 <div class="circle-wrapper">
                     <div class="upper-circle"></div>
@@ -194,12 +196,12 @@
     <!--Skills Page-->
     <div class="skills-page" id="SkillsPageSection">
         <h1 class="skills-title autoDisplay">My <Span>Skills</Span></h1>
-        <p class="skills-desc">
+        <p class="skills-desc autoDisplay">
             I build scalable full-stack applications using modern web technologies, focusing on clean, efficient, and
             maintainable code.
         </p>
 
-        <div class="skills-row">
+        <div class="skills-row cardsFadeInRight">
             <div class="skills-card">
                 <div class="skills-icon-bg">
                     <i class="fa-brands fa-html5" style="color: #FFFFFF; font-size: 30px;"></i>
@@ -251,7 +253,7 @@
                 <p class="progress-pct">90%</p>
             </div>
         </div>
-        <div class="skills-row">
+        <div class="skills-row cardsFadeInRight">
             <div class="skills-card">
                 <div class="skills-icon-bg">
                     <i class="fa-brands fa-node" style="color: #FFFFFF; font-size: 30px;"></i>
@@ -303,7 +305,7 @@
                 <p class="progress-pct">80%</p>
             </div>
         </div>
-        <div class="skills-row">
+        <div class="skills-row cardsFadeInRight">
             <div class="skills-card">
                 <div class="skills-icon-bg">
                     <i class="fa-brands fa-envira" style="color: #FFFFFF; font-size: 30px;"></i>
@@ -326,56 +328,163 @@
             </div>
         </div>
 
-        <div class="slider" style="
-  --width: 130px;
-  --height: 55px;
-  --quantity: 6;
-">
-
+        <!-- Mobile Skills Slider Row 1 (Left to Right) -->
+        <div class="slider slider-row-1 autoDisplay">
             <div class="list">
-
-                <div class="mobile-skill-card" style="--position: 1;">
+                <!-- Original set -->
+                <div class="mobile-skill-card">
                     <div class="mobile-skill-icon-bg">
                         <i class="fa-brands fa-html5"></i>
                     </div>
                     <h5 class="mobile-skill-name">HTML</h5>
                 </div>
-
-                <div class="mobile-skill-card" style="--position: 2;">
+                <div class="mobile-skill-card">
                     <div class="mobile-skill-icon-bg">
                         <i class="fa-brands fa-css3-alt"></i>
                     </div>
                     <h5 class="mobile-skill-name">CSS</h5>
                 </div>
-
-                <div class="mobile-skill-card" style="--position: 3;">
+                <div class="mobile-skill-card">
+                    <div class="mobile-skill-icon-bg">
+                        <i class="fa-brands fa-bootstrap"></i>
+                    </div>
+                    <h5 class="mobile-skill-name">Bootstrap</h5>
+                </div>
+                <div class="mobile-skill-card">
                     <div class="mobile-skill-icon-bg">
                         <i class="fa-brands fa-js"></i>
                     </div>
                     <h5 class="mobile-skill-name">JavaScript</h5>
                 </div>
-
-                <div class="mobile-skill-card" style="--position: 4;">
+                <div class="mobile-skill-card">
                     <div class="mobile-skill-icon-bg">
-                        <i class="fa-brands fa-react"></i>
+                        <i class="fa-brands fa-figma"></i>
                     </div>
-                    <h5 class="mobile-skill-name">React</h5>
+                    <h5 class="mobile-skill-name">UI/UX</h5>
                 </div>
-
-                <div class="mobile-skill-card" style="--position: 5;">
+                <div class="mobile-skill-card">
                     <div class="mobile-skill-icon-bg">
                         <i class="fa-brands fa-node"></i>
                     </div>
-                    <h5 class="mobile-skill-name">Node</h5>
+                    <h5 class="mobile-skill-name">Node.js</h5>
                 </div>
-
-                <div class="mobile-skill-card" style="--position: 6;">
+                <!-- Duplicate set for seamless loop -->
+                <div class="mobile-skill-card">
                     <div class="mobile-skill-icon-bg">
-                        <i class="fa-brands fa-github"></i>
+                        <i class="fa-brands fa-html5"></i>
                     </div>
-                    <h5 class="mobile-skill-name">GitHub</h5>
+                    <h5 class="mobile-skill-name">HTML</h5>
                 </div>
+                <div class="mobile-skill-card">
+                    <div class="mobile-skill-icon-bg">
+                        <i class="fa-brands fa-css3-alt"></i>
+                    </div>
+                    <h5 class="mobile-skill-name">CSS</h5>
+                </div>
+                <div class="mobile-skill-card">
+                    <div class="mobile-skill-icon-bg">
+                        <i class="fa-brands fa-bootstrap"></i>
+                    </div>
+                    <h5 class="mobile-skill-name">Bootstrap</h5>
+                </div>
+                <div class="mobile-skill-card">
+                    <div class="mobile-skill-icon-bg">
+                        <i class="fa-brands fa-js"></i>
+                    </div>
+                    <h5 class="mobile-skill-name">JavaScript</h5>
+                </div>
+                <div class="mobile-skill-card">
+                    <div class="mobile-skill-icon-bg">
+                        <i class="fa-brands fa-figma"></i>
+                    </div>
+                    <h5 class="mobile-skill-name">UI/UX</h5>
+                </div>
+                <div class="mobile-skill-card">
+                    <div class="mobile-skill-icon-bg">
+                        <i class="fa-brands fa-node"></i>
+                    </div>
+                    <h5 class="mobile-skill-name">Node.js</h5>
+                </div>
+            </div>
+        </div>
 
+        <!-- Mobile Skills Slider Row 2 (Right to Left) -->
+        <div class="slider slider-row-2 autoDisplay">
+            <div class="list">
+                <!-- Original set -->
+                <div class="mobile-skill-card">
+                    <div class="mobile-skill-icon-bg">
+                        <i class="fa-brands fa-react"></i>
+                    </div>
+                    <h5 class="mobile-skill-name">React JS</h5>
+                </div>
+                <div class="mobile-skill-card">
+                    <div class="mobile-skill-icon-bg">
+                        <i class="fa-brands fa-python"></i>
+                    </div>
+                    <h5 class="mobile-skill-name">Python</h5>
+                </div>
+                <div class="mobile-skill-card">
+                    <div class="mobile-skill-icon-bg">
+                        <i class="fa-brands fa-java"></i>
+                    </div>
+                    <h5 class="mobile-skill-name">Java</h5>
+                </div>
+                <div class="mobile-skill-card">
+                    <div class="mobile-skill-icon-bg">
+                        <i class="fa-sharp fa-solid fa-database"></i>
+                    </div>
+                    <h5 class="mobile-skill-name">SQLite</h5>
+                </div>
+                <div class="mobile-skill-card">
+                    <div class="mobile-skill-icon-bg">
+                        <i class="fa-brands fa-envira"></i>
+                    </div>
+                    <h5 class="mobile-skill-name">MongoDB</h5>
+                </div>
+                <div class="mobile-skill-card">
+                    <div class="mobile-skill-icon-bg">
+                        <i class="fa-brands fa-git-alt"></i>
+                    </div>
+                    <h5 class="mobile-skill-name">Git</h5>
+                </div>
+                <!-- Duplicate set for seamless loop -->
+                <div class="mobile-skill-card">
+                    <div class="mobile-skill-icon-bg">
+                        <i class="fa-brands fa-react"></i>
+                    </div>
+                    <h5 class="mobile-skill-name">React JS</h5>
+                </div>
+                <div class="mobile-skill-card">
+                    <div class="mobile-skill-icon-bg">
+                        <i class="fa-brands fa-python"></i>
+                    </div>
+                    <h5 class="mobile-skill-name">Python</h5>
+                </div>
+                <div class="mobile-skill-card">
+                    <div class="mobile-skill-icon-bg">
+                        <i class="fa-brands fa-java"></i>
+                    </div>
+                    <h5 class="mobile-skill-name">Java</h5>
+                </div>
+                <div class="mobile-skill-card">
+                    <div class="mobile-skill-icon-bg">
+                        <i class="fa-sharp fa-solid fa-database"></i>
+                    </div>
+                    <h5 class="mobile-skill-name">SQLite</h5>
+                </div>
+                <div class="mobile-skill-card">
+                    <div class="mobile-skill-icon-bg">
+                        <i class="fa-brands fa-envira"></i>
+                    </div>
+                    <h5 class="mobile-skill-name">MongoDB</h5>
+                </div>
+                <div class="mobile-skill-card">
+                    <div class="mobile-skill-icon-bg">
+                        <i class="fa-brands fa-git-alt"></i>
+                    </div>
+                    <h5 class="mobile-skill-name">Git</h5>
+                </div>
             </div>
         </div>
     </div>
@@ -386,7 +495,7 @@
         <p class="project-page-desc autoDisplay">A collection of real-world projects demonstrating my full-stack skills,
             clean code
             practices, and problem-solving approach.</p>
-        <div class="swiper mySwiper"
+        <div class="swiper mySwiper autoDisplay"
             style="padding-top:20px; padding-bottom:20px; padding-left:20px; padding-right:20px;">
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
@@ -402,6 +511,29 @@
                             <p class="project-tech">Nodejs</p>
                             <p class="project-tech">Python</p>
                             <p class="project-tech">REST API</p>
+                        </div>
+                        <div class="github-icon-con">
+                            <a href="" style="text-decoration:none;" target="_blank">
+                                <i class="fa-brands fa-github" style="color: #FFFFFF; font-size:21.5px;"></i>
+                            </a>
+                        </div>
+                        <!--Techs Icon-->
+                        <div class="project-techs-icon">
+                            <p>
+                                <i class="fa-solid fa-globe" style="font-size: 12px; color: #FFFFFF;"></i>
+                            </p>
+                            <p>
+                                <i class="fa-brands fa-react" style="font-size: 12px; color: #FFFFFF;"></i>
+                            </p>
+                            <p>
+                                <i class="fa-brands fa-node" style="font-size: 12px; color: #FFFFFF;"></i>
+                            </p>
+                            <p>
+                                <i class="fa-brands fa-python" style="font-size: 12px; color: #FFFFFF;"></i>
+                            </p>
+                            <p>
+                                <i class="fa-solid fa-database" style="font-size: 12px; color: #FFFFFF;"></i>
+                            </p>
                         </div>
                     </div>
                     <a href="" target="_blank" class="view-btn-con" style="text-decoration: none;">
@@ -423,6 +555,30 @@
                             <div class="project-tech">Node.js</div>
                             <div class="project-tech">Python</div>
                         </div>
+                        <div class="github-icon-con">
+                            <a href="https://github.com/Elango-2005/My-Professional-Portfolio"
+                                style="text-decoration:none;" target="_blank">
+                                <i class="fa-brands fa-github" style="color: #FFFFFF; font-size:21.5px;"></i>
+                            </a>
+                        </div>
+                        <!--Techs Icon-->
+                        <div class="project-techs-icon">
+                            <p>
+                                <i class="fa-brands fa-html5" style="font-size: 12px; color: #FFFFFF;"></i>
+                            </p>
+                            <p>
+                                <i class="fa-brands fa-css3-alt" style="font-size: 12px; color: #FFFFFF;"></i>
+                            </p>
+                            <p>
+                                <i class="fa-brands fa-bootstrap" style="font-size: 12px; color: #FFFFFF;"></i>
+                            </p>
+                            <p>
+                                <i class="fa-brands fa-node-js" style="font-size: 12px; color: #FFFFFF;"></i>
+                            </p>
+                            <p>
+                                <i class="fa-solid fa-bezier-curve" style="font-size: 12px; color: #FFFFFF;"></i>
+                            </p>
+                        </div>
                     </div>
                     <a href="https://github.com/Elango-2005/My-Professional-Portfolio" target="_blank"
                         class="view-btn-con" style="text-decoration: none;">
@@ -442,6 +598,27 @@
                             <div class="project-tech">Pipe Dream</div>
                             <div class="project-tech">MCP Server</div>
                             <div class="project-tech">Google APIs</div>
+                        </div>
+                        <div class="github-icon-con">
+                            <a href="https://github.com/Elango-2005/Model-Context-Protocol"
+                                style="text-decoration:none;" target="_blank">
+                                <i class="fa-brands fa-github" style="color: #FFFFFF; font-size:21.5px;"></i>
+                            </a>
+                        </div>
+                        <!--Techs Icon-->
+                        <div class="project-techs-icon">
+                            <p>
+                                <i class="fa-solid fa-globe" style="font-size: 12px; color: #FFFFFF;"></i>
+                            </p>
+                            <p>
+                                <i class="fa-brands fa-python" style="font-size: 12px; color: #FFFFFF;"></i>
+                            </p>
+                            <p>
+                                <i class="fa-solid fa-server" style="font-size: 12px; color: #FFFFFF;"></i>
+                            </p>
+                            <p>
+                                <i class="fa-brands fa-google-drive" style="font-size: 12px; color: #FFFFFF;"></i>
+                            </p>
                         </div>
                     </div>
                     <a href="https://github.com/Elango-2005/Model-Context-Protocol" target="_blank" class="view-btn-con"
@@ -464,6 +641,33 @@
                             <p class="project-tech">Python</p>
                             <p class="project-tech">Pytorch</p>
                             <p class="project-tech">IBM Cloud</p>
+                        </div>
+                        <div class="github-icon-con">
+                            <a href="https://github.com/Elango-2005/AI-Generated-Image-Detection-and-Fraud-Prevention-System"
+                                style="text-decoration:none;" target="_blank">
+                                <i class="fa-brands fa-github" style="color: #FFFFFF; font-size:21.5px;"></i>
+                            </a>
+                        </div>
+                        <!--Techs Icon-->
+                        <div class="project-techs-icon">
+                            <p>
+                                <i class="fa-brands fa-html5" style="font-size: 12px; color: #FFFFFF;"></i>
+                            </p>
+                            <p>
+                                <i class="fa-brands fa-css3-alt" style="font-size: 12px; color: #FFFFFF;"></i>
+                            </p>
+                            <p>
+                                <i class="fa-brands fa-node-js" style="font-size: 12px; color: #FFFFFF;"></i>
+                            </p>
+                            <p>
+                                <i class="fa-brands fa-python" style="font-size: 12px; color: #FFFFFF;"></i>
+                            </p>
+                            <p>
+                                <i class="fa-solid fa-code-branch" style="font-size: 12px; color: #FFFFFF;"></i>
+                            </p>
+                            <p>
+                                <i class="fa-solid fa-database" style="font-size: 12px; color: #FFFFFF;"></i>
+                            </p>
                         </div>
                     </div>
                     <a href="https://github.com/Elango-2005/AI-Generated-Image-Detection-and-Fraud-Prevention-System"
@@ -489,7 +693,7 @@
             or any of my social platforms</p>
 
         <div class="contact-page-cards">
-            <div class="form-section">
+            <div class="form-section autoBlur">
                 <form id="contactForm" action="https://formspree.io/f/mojlkoay" method="POST">
                     <div>
                         <label for="name" class="label-ele">Name</label>
@@ -511,7 +715,7 @@
                 </form>
             </div>
             <div>
-                <div class="connect-section">
+                <div class="connect-section fadeInRight">
                     <h6 class="connect-sec-title">Let's Connect</h6>
                     <p class="connect-sec-desc">I’m always excited to work on new projects and collaborate with amazing
                         people. Whether you have a
@@ -546,7 +750,7 @@
                     </a>
                 </div>
 
-                <div class="follow-me-con">
+                <div class="follow-me-con fadeInRight">
                     <p class="follow-me">Follow Me On</p>
                     <div class="icons-container">
                         <a href="https://github.com/Elango-2005" style="text-decoration:none;" target="_blank">
@@ -590,8 +794,8 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script>
         var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 3,
-            spaceBetween: 30,
+            slidesPerView: 1,
+            spaceBetween: 15,
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
@@ -599,6 +803,16 @@
             navigation: {
                 nextEl: ".swiper-button-next",
                 prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                481: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                769: {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                },
             },
         });
     </script>
