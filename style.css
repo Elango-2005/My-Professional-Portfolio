@@ -201,7 +201,7 @@ nav ul a.active {
   }
 }
 .role-ele {
-  font-size: 60px;
+  font-size: 50px;
   color: #ffffff;
   font-weight: bold;
 }
@@ -831,6 +831,9 @@ nav ul a.active {
   height: 6px;
   background: linear-gradient(90deg, #ffffff, #ffffff, #9719fd, #5a0f97);
   border-radius: 4px;
+}
+.mobile-contact-desc{
+  display: none;
 }
 .contact-page-desc {
   color: rgb(255, 255, 255, 0.5);

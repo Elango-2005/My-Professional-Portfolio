@@ -1,6 +1,5 @@
 /* ========================================
    MOBILE RESPONSIVE STYLES (max-width: 480px)
-   Portfolio - Elango S
    ======================================== */
 
 @media screen and (max-width: 480px) {
@@ -63,7 +62,7 @@
     align-items: flex-start;
     padding: 15px 20px;
     padding-top: 65px;
-    height: 100vh;
+    height: 80vh;
     gap: 0;
   }
   .robo-con {
@@ -150,6 +149,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 15vh;
+    border:none;
   }
 
   .scroll-down {
@@ -509,6 +510,11 @@
     bottom: -5px;
   }
   .contact-page-desc {
+    display: none;
+  }
+  .mobile-contact-desc{
+    display: block;
+    color: rgb(255, 255, 255, 0.5);
     font-size: 12px;
     margin: 10px 0 15px 0;
     text-align: center;
