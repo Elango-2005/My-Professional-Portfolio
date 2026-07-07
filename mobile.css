@@ -91,8 +91,17 @@
     text-align: left;
     margin-top: 10%;
   }
+  .home-content{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 10px;
+}
   .name-ele {
     font-size: 20px;
+    text-align: left;
   }
   .name-ele .span-ele {
     font-size: 24px;
@@ -101,6 +110,7 @@
     font-size: 32px;
     text-align: left;
     width: 100%;
+    text-align: left;
   }
   .description {
     font-size: 13px;
@@ -279,18 +289,26 @@
     height: 4px;
     bottom: -5px;
   }
-  .skills-desc {
-    display: block;
-    font-size: 12px;
-    margin-bottom: 10px;
-    opacity: 0.8;
+  .skills-desc{
+    display: none;
   }
-  .skills-row {
+  .mobile-skills-desc {
+    display: block;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 500;
+  color: rgb(255, 255, 255, 0.6);
+    margin-bottom: 10px;
+  }
+  .skills-grid {
     display: none !important;
   }
 
   /* Mobile Skill Slider */
   .slider {
+    display: none;
+  }
+  .mobile-slider {
     display: block;
     width: 100%;
     overflow: hidden;
@@ -299,7 +317,7 @@
     mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
     -webkit-mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
   }
-  .slider .list {
+  .mobile-slider .list {
     display: flex;
     gap: 15px;
     width: max-content;
@@ -307,11 +325,11 @@
   }
 
   /* Row 1: Left to Right */
-  .slider-row-1 .list {
+  .mobile-slider-row-1 .list {
     animation: scrollRight 20s linear infinite;
   }
   /* Row 2: Right to Left */
-  .slider-row-2 .list {
+  .mobile-slider-row-2 .list {
     animation: scrollLeft 20s linear infinite;
   }
 
@@ -325,7 +343,7 @@
   }
 
   /* Pause on hover/touch */
-  .slider:hover .list {
+  .mobile-slider:hover .list {
     animation-play-state: paused;
   }
 
@@ -792,12 +810,12 @@
     padding: 25px;
     padding-top: 80px;
   }
-  .skills-row {
+  .skills-grid {
     gap: 20px;
   }
   .skills-card {
     width: 180px;
-    height: 150px;
+    height: 180px;
   }
   .project-page {
     background-image: none !important;

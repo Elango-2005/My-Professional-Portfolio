@@ -56,6 +56,7 @@
 </head>
 
 <body>
+
     <!--Preloader-->
     <div id="preloader">
         <dotlottie-wc id="loaderAnimation"
@@ -63,6 +64,7 @@
             class="loader-animation">
         </dotlottie-wc>
     </div>
+
 
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark nav-bg fixed-top nav-drop-shadow">
@@ -98,15 +100,18 @@
     <!-- Home Page -->
     <div class="home-page" id="HomePageSection">
         <div class="home-con w-5">
-            <h5 class="name-ele">
-                Hi 👋, I'm <span class="span-ele">Elango S</span>
-            </h5>
-            <h1 class="role-ele">AI & ML Learning Enthusiast</h1>
+            <div class="home-content">
+                <h5 class="name-ele">
+                    Hi 👋, I'm <span class="span-ele">Elango S</span>
+                </h5>
+                <h1 class="role-ele">AI & ML Enthusiast</h1>
 
-            <p class="description">
-                Inspired by AI, driven by data, and focused on building intelligent solutions that create real-world
-                impact.
-            </p>
+                <p class="description">
+                    Inspired by AI, driven by data, and focused on building intelligent solutions that create
+                    real-world
+                    impact.
+                </p>
+            </div>
             <div class="btn-con">
                 <a href="#ProjectsPageSection" style="text-decoration: none; margin:0px;">
                     <button class="view-btn">View My Work <i class="fa-solid fa-arrow-right"
@@ -132,7 +137,7 @@
         <div class="scroll-down"></div>
     </div>
 
-    
+
     <!--About Me Page-->
     <div class="about-page" id="AboutPageSection">
         <h1 class="about-title autoDisplay">About <span>Me</span></h1>
@@ -142,7 +147,7 @@
                 <div class="circle-wrapper">
                     <div class="upper-circle"></div>
                     <div class="inner-circle">
-                        <img src="Images/IMG_2779.JPG1.jpeg" alt="" class="profile-img">
+                        <img src="Images/Profile Picture.png" alt="" class="profile-img">
                     </div>
                 </div>
                 <div class="pink-dot"></div>
@@ -193,140 +198,172 @@
     <!--Skills Page-->
     <div class="skills-page" id="SkillsPageSection">
         <h1 class="skills-title autoDisplay">My <Span>Skills</Span></h1>
-        <p class="skills-desc autoDisplay">
+        <p class="skills-desc">I build scalable full-stack applications using modern web technologies, focusing on clean, efficient, and
+            maintainable code. I enjoy creating responsive user interfaces, developing robust backend systems, and
+            delivering seamless user experiences.</p>
+        <p class="mobile-skills-desc autoDisplay">
             I build scalable full-stack applications using modern web technologies, focusing on clean, efficient, and
             maintainable code.
         </p>
 
-        <div class="skills-row cardsFadeInRight">
-            <div class="skills-card">
-                <div class="skills-icon-bg">
-                    <i class="fa-brands fa-python" style="color: #FFFFFF; font-size: 30px;"></i>
+        <div class="slider slider-row-1 autoDisplay">
+            <div class="list">
+                <div class="skills-card">
+                    <div class="skills-icon-bg">
+                        <i class="fa-brands fa-python" style="color: #FFFFFF;"></i>
+                    </div>
+                    <h5 class="skills-name">Python</h5>
                 </div>
-                <h5 class="skills-name">Python</h5>
-                <div class="skill-bar">
-                    <div class="skill-fill" style="width:90%"></div>
+                <div class="skills-card">
+                    <div class="skills-icon-bg">
+                        <i class="fa-brands fa-java" style="color: #FFFFFF;"></i>
+                    </div>
+                    <h5 class="skills-name">Java</h5>
                 </div>
-                <p class="progress-pct">90%</p>
-            </div>
-            <div class="skills-card">
-                <div class="skills-icon-bg">
-                    <i class="fa-brands fa-java" style="color: #FFFFFF; font-size: 33px;"></i>
+                <div class="skills-card">
+                    <div class="skills-icon-bg">
+                        <i class="fa-sharp fa-solid fa-database" style="color: #FFFFFF;"></i>
+                    </div>
+                    <h5 class="skills-name">SQLite</h5>
                 </div>
-                <h5 class="skills-name">Java</h5>
-                <div class="skill-bar">
-                    <div class="skill-fill" style="width:85%"></div>
+                <div class="skills-card">
+                    <div class="skills-icon-bg">
+                        <i class="fa-brands fa-js" style="color: #FFFFFF;"></i>
+                    </div>
+                    <h5 class="skills-name">JavaScript</h5>
                 </div>
-                <p class="progress-pct">85%</p>
-            </div>
-            <div class="skills-card">
-                <div class="skills-icon-bg">
-                    <i class="fa-sharp fa-solid fa-database" style="color: #FFFFFF; font-size: 28px;"></i>
+                <div class="skills-card">
+                    <div class="skills-icon-bg">
+                        <i class="fa-brands fa-node" style="color: #FFFFFF;"></i>
+                    </div>
+                    <h5 class="skills-name">Node.js</h5>
                 </div>
-                <h5 class="skills-name">SQLite</h5>
-                <div class="skill-bar">
-                    <div class="skill-fill" style="width:80%"></div>
+                <div class="skills-card">
+                    <div class="skills-icon-bg">
+                        <i class="fa-brands fa-react" style="color: #FFFFFF;"></i>
+                    </div>
+                    <h5 class="skills-name">React JS</h5>
                 </div>
-                <p class="progress-pct">80%</p>
-            </div>
-            <div class="skills-card">
-                <div class="skills-icon-bg">
-                    <i class="fa-brands fa-node-js" style="color: #FFFFFF; font-size: 30px;"></i>
+                <!--Duplicates-->
+                <div class="skills-card">
+                    <div class="skills-icon-bg">
+                        <i class="fa-brands fa-python" style="color: #FFFFFF;"></i>
+                    </div>
+                    <h5 class="skills-name">Python</h5>
                 </div>
-                <h5 class="skills-name">JavaScript</h5>
-                <div class="skill-bar">
-                    <div class="skill-fill" style="width:90%"></div>
+                <div class="skills-card">
+                    <div class="skills-icon-bg">
+                        <i class="fa-brands fa-java" style="color: #FFFFFF;"></i>
+                    </div>
+                    <h5 class="skills-name">Java</h5>
                 </div>
-                <p class="progress-pct">90%</p>
-            </div>
-            <div class="skills-card">
-                <div class="skills-icon-bg">
-                    <i class="fa-brands fa-node" style="color: #FFFFFF; font-size: 30px;"></i>
+                <div class="skills-card">
+                    <div class="skills-icon-bg">
+                        <i class="fa-sharp fa-solid fa-database" style="color: #FFFFFF;"></i>
+                    </div>
+                    <h5 class="skills-name">SQLite</h5>
                 </div>
-                <h5 class="skills-name">Node.js</h5>
-                <div class="skill-bar">
-                    <div class="skill-fill" style="width:80%"></div>
+                <div class="skills-card">
+                    <div class="skills-icon-bg">
+                        <i class="fa-brands fa-js" style="color: #FFFFFF;"></i>
+                    </div>
+                    <h5 class="skills-name">JavaScript</h5>
                 </div>
-                <p class="progress-pct">80%</p>
-            </div>
-        </div>
-        <div class="skills-row cardsFadeInRight">
-            <div class="skills-card">
-                <div class="skills-icon-bg">
-                    <i class="fa-brands fa-react" style="color: #FFFFFF; font-size: 30px;"></i>
+                <div class="skills-card">
+                    <div class="skills-icon-bg">
+                        <i class="fa-brands fa-node" style="color: #FFFFFF;"></i>
+                    </div>
+                    <h5 class="skills-name">Node.js</h5>
                 </div>
-                <h5 class="skills-name">React JS</h5>
-                <div class="skill-bar">
-                    <div class="skill-fill" style="width:80%"></div>
+                <div class="skills-card">
+                    <div class="skills-icon-bg">
+                        <i class="fa-brands fa-react" style="color: #FFFFFF;"></i>
+                    </div>
+                    <h5 class="skills-name">React JS</h5>
                 </div>
-                <p class="progress-pct">80%</p>
-            </div>
-            <div class="skills-card">
-                <div class="skills-icon-bg">
-                    <i class="fa-brands fa-html5" style="color: #FFFFFF; font-size: 30px;"></i>
-                </div>
-                <h5 class="skills-name">HTML</h5>
-                <div class="skill-bar">
-                    <div class="skill-fill" style="width:95%"></div>
-                </div>
-                <p class="progress-pct">95%</p>
-            </div>
-            <div class="skills-card">
-                <div class="skills-icon-bg">
-                    <i class="fa-brands fa-css3-alt" style="color: #FFFFFF; font-size: 30px;"></i>
-                </div>
-                <h5 class="skills-name">CSS</h5>
-                <div class="skill-bar">
-                    <div class="skill-fill" style="width:95%"></div>
-                </div>
-                <p class="progress-pct">95%</p>
-            </div>
-            <div class="skills-card">
-                <div class="skills-icon-bg">
-                    <i class="fa-brands fa-bootstrap" style="color: #FFFFFF; font-size: 27px;"></i>
-                </div>
-                <h5 class="skills-name">Bootstrap</h5>
-                <div class="skill-bar">
-                    <div class="skill-fill" style="width:95%"></div>
-                </div>
-                <p class="progress-pct">95%</p>
-            </div>
-            <div class="skills-card">
-                <div class="skills-icon-bg">
-                    <i class="fa-brands fa-figma" style="color: #FFFFFF; font-size: 27px;"></i>
-                </div>
-                <h5 class="skills-name">UI/UX</h5>
-                <div class="skill-bar">
-                    <div class="skill-fill" style="width:90%"></div>
-                </div>
-                <p class="progress-pct">90%</p>
             </div>
         </div>
-        <div class="skills-row cardsFadeInRight">
-            <div class="skills-card">
-                <div class="skills-icon-bg">
-                    <i class="fa-brands fa-envira" style="color: #FFFFFF; font-size: 30px;"></i>
+
+        <div class="slider slider-row-2 autoDisplay">
+            <div class="list">
+                <div class="skills-card">
+                    <div class="skills-icon-bg">
+                        <i class="fa-brands fa-html5" style="color: #FFFFFF;"></i>
+                    </div>
+                    <h5 class="skills-name">HTML</h5>
                 </div>
-                <h5 class="skills-name">MongoDB</h5>
-                <div class="skill-bar">
-                    <div class="skill-fill" style="width:80%"></div>
+                <div class="skills-card">
+                    <div class="skills-icon-bg">
+                        <i class="fa-brands fa-css3-alt" style="color: #FFFFFF;"></i>
+                    </div>
+                    <h5 class="skills-name">CSS</h5>
                 </div>
-                <p class="progress-pct">80%</p>
-            </div>
-            <div class="skills-card">
-                <div class="skills-icon-bg">
-                    <i class="fa-brands fa-git-alt" style="color: #FFFFFF; font-size: 30px;"></i>
+                <div class="skills-card">
+                    <div class="skills-icon-bg">
+                        <i class="fa-brands fa-bootstrap" style="color: #FFFFFF;"></i>
+                    </div>
+                    <h5 class="skills-name">Bootstrap</h5>
                 </div>
-                <h5 class="skills-name">Git</h5>
-                <div class="skill-bar">
-                    <div class="skill-fill" style="width:80%"></div>
+                <div class="skills-card">
+                    <div class="skills-icon-bg">
+                        <i class="fa-brands fa-figma" style="color: #FFFFFF;"></i>
+                    </div>
+                    <h5 class="skills-name">UI/UX</h5>
                 </div>
-                <p class="progress-pct">80%</p>
+                <div class="skills-card">
+                    <div class="skills-icon-bg">
+                        <i class="fa-brands fa-envira" style="color: #FFFFFF;"></i>
+                    </div>
+                    <h5 class="skills-name">MongoDB</h5>
+                </div>
+                <div class="skills-card">
+                    <div class="skills-icon-bg">
+                        <i class="fa-brands fa-git-alt" style="color: #FFFFFF;"></i>
+                    </div>
+                    <h5 class="skills-name">Git</h5>
+                </div>
+                <!--Duplicates-->
+                <div class="skills-card">
+                    <div class="skills-icon-bg">
+                        <i class="fa-brands fa-html5" style="color: #FFFFFF;"></i>
+                    </div>
+                    <h5 class="skills-name">HTML</h5>
+                </div>
+                <div class="skills-card">
+                    <div class="skills-icon-bg">
+                        <i class="fa-brands fa-css3-alt" style="color: #FFFFFF;"></i>
+                    </div>
+                    <h5 class="skills-name">CSS</h5>
+                </div>
+                <div class="skills-card">
+                    <div class="skills-icon-bg">
+                        <i class="fa-brands fa-bootstrap" style="color: #FFFFFF;"></i>
+                    </div>
+                    <h5 class="skills-name">Bootstrap</h5>
+                </div>
+                <div class="skills-card">
+                    <div class="skills-icon-bg">
+                        <i class="fa-brands fa-figma" style="color: #FFFFFF;"></i>
+                    </div>
+                    <h5 class="skills-name">UI/UX</h5>
+                </div>
+                <div class="skills-card">
+                    <div class="skills-icon-bg">
+                        <i class="fa-brands fa-envira" style="color: #FFFFFF;"></i>
+                    </div>
+                    <h5 class="skills-name">MongoDB</h5>
+                </div>
+                <div class="skills-card">
+                    <div class="skills-icon-bg">
+                        <i class="fa-brands fa-git-alt" style="color: #FFFFFF;"></i>
+                    </div>
+                    <h5 class="skills-name">Git</h5>
+                </div>
             </div>
         </div>
 
         <!-- Mobile Skills Slider Row 1 (Left to Right) -->
-        <div class="slider slider-row-1 autoDisplay">
+        <div class="mobile-slider mobile-slider-row-1 autoDisplay">
             <div class="list">
                 <!-- Original set -->
                 <div class="mobile-skill-card">
@@ -406,7 +443,7 @@
         </div>
 
         <!-- Mobile Skills Slider Row 2 (Right to Left) -->
-        <div class="slider slider-row-2 autoDisplay">
+        <div class="mobile-slider mobile-slider-row-2 autoDisplay">
             <div class="list">
                 <!-- Original set -->
                 <div class="mobile-skill-card">
@@ -699,13 +736,13 @@
                                 <i class="fa-brands fa-react" style="font-size: 12px; color: #FFFFFF;"></i>
                             </p>
                             <p>
-                                <img src = "Assests\icons\Expo--Streamline-Simple-Icons.svg" alt="Expo" height="12px"/>
+                                <img src="Assests\icons\Expo--Streamline-Simple-Icons.svg" alt="Expo" height="12px" />
                             </p>
                             <p>
-                                <img src = "Assests\icons\Tsnode--Streamline-Simple-Icons.svg" alt="Expo" height="12px"/>
+                                <img src="Assests\icons\Tsnode--Streamline-Simple-Icons.svg" alt="Expo" height="12px" />
                             </p>
                             <p>
-                                <img src = "Assests\icons\Api.svg" alt="Expo" height="12px"/>
+                                <img src="Assests\icons\Api.svg" alt="Expo" height="12px" />
                             </p>
                         </div>
                     </div>
