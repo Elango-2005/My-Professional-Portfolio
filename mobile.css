@@ -97,7 +97,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  margin-left: 10px;
+  margin-left: 0;
 }
   .name-ele {
     font-size: 20px;
