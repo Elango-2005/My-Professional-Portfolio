@@ -96,7 +96,7 @@ AI Developer | Building AI
 ## Contact
 
 - GitHub: [Elango-2005](https://github.com/Elango-2005)
-- LinkedIn: (https://www.linkedin.com/in/elango-selvaraj/)
+- LinkedIn: [Elango Selvaraj](https://www.linkedin.com/in/elango-selvaraj/)
 - Email: elangoselvaraj372@gmail.com
 
 ## License
