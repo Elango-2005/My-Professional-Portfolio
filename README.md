@@ -109,9 +109,6 @@ Open `index.html` in your browser, or use a local development server such as **V
 * **LinkedIn:** https://linkedin.com/in/elango-selvaraj
 * **Email:** [elangoselvaraj372@gmail.com](mailto:elangoselvaraj372@gmail.com)
 
-## 📄 License
-
-No license has been specified for this repository.
 
 ## ⭐ About
 
